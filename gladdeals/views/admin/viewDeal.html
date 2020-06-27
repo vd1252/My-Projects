@@ -1,0 +1,37 @@
+<div class="panel-body widget-shadow" style="overflow-x:auto;">
+						<h4>All Deals:</h4>
+						<table class="table">
+							<thead>
+								<tr>
+								  <th>Cat_id</th>
+								  <th>Deal_id</th>
+								  <th>Supplier_id</th>
+								  <th>Deal_title</th>
+								  <th>Deal_image</th>
+								  <th>Location</th>
+								  <th>Valid_for</th>
+								  <th>Valid_on</th>
+								  <th>Price</th>
+								  <th>Timings</th>
+								  <th>Details</th>
+								  <th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="deal in deals">
+								  <th scope="row">{{deal.cat_id}}</th>
+								  <th scope="row">{{deal.deal_id}}</th>
+								  <th scope="row">{{deal.supplier_id}}</th>
+								  <td>{{deal.deal_title}}</td>
+								  <td><img ng-src="{{deal.deal_image}}" class="img-thumbnail" style="height:100px;width:100px;"></td>
+								  <td>{{deal.location}}</td>
+								  <td>{{deal.valid_for}}</td>
+								  <td>{{deal.valid_on}}</td>
+								  <td>{{deal.price|currency:"Rs"}}</td>
+								  <td>{{deal.timings}}</td>
+								  <td>{{deal.details}}</td>
+								<td><a href="#!deleteDeal?id={{deal._id}}"><span class="fa fa-trash"></span></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>

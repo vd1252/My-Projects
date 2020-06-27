@@ -1,0 +1,25 @@
+<div class="panel-body widget-shadow" style="overflow-x:auto;">
+						<h4>All Categories:</h4>
+						<table class="table">
+							<thead>
+								<tr>
+								  <th>Cat_id</th>
+								  <th>Cat_name</th>
+								  <th>Cat_status</th>
+								  <th>Cat_image</th>
+								  <th>Edit</th>
+								  <th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="cat in categories">
+								  <th scope="row">{{cat.cat_id}}</th>
+								  <td>{{cat.cat_name}}</td>
+								  <td>{{cat.cat_status|Demofilter}}</td>
+								  <td><img ng-src="{{cat.cat_image}}" class="img-thumbnail" style="height:100px;width:100px;"></td>
+								<td><a href="#!editCat?id={{cat._id}}"><span class="fa fa-pencil"></span></a></td>
+								<td><a href="#!deleteCat?id={{cat._id}}"><span class="fa fa-trash"></span></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>

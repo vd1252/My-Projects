@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Glad-Deals</title>
+	<!-- Bootstrap link -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Bootstrap link  end-->
+	<!-- CSS stylesheet -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/signup.css" rel="stylesheet" type="text/css" media="all" /> 
+	<link href="css/dealPage.css" rel="stylesheet"/>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+	<script src="js/dealPage.js" charset="utf-8"></script>
+
+	<script src="http://localhost:3000/javascripts/userRoute.js"></script>
+
+	
+
+</head>
+
+<body ng-app="myModule">
+
+	<div class="header" ng-controller="indexController">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="logo">
+						<a href="index.html">
+							<h1><span>GLAD-DEALS</span></h1>
+							{{token}}
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+						
+					<div class="row" style="margin-top:50px;padding-left:50px;">
+						<div class="col-md-2"><a href="#!login" ng-hide="token"><span class="fa fa-user"><b>Login</b></span></a></div>
+						<div class="col-md-2"><a href="#!signup" ng-hide="token"><span class="fa fa-sign-in"><b>Signup</b></span></a></div>
+						<div class="col-md-2"><a href="#!review" ng-show="token"><span class="fa fa-edit"><b>Review</b></span></a></div>
+						<div class="col-md-2"><a href="#!logout" ng-show="token"><span class="fa fa-power-off"></span></a></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ng-view></ng-view>
+	<div class="footer">
+		<p style="color: white;text-align: center;">&copy; Glad-Deals All Rights Reserved</p>
+	</div>
+	<!--- Footer Ends Here --->
+</body>
+
+</html>

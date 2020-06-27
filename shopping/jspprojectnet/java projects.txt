@@ -1,0 +1,14 @@
+Project
+Feasibility Study - whether project is feasible or not?
+1. Economic - cost? team member - 2 - 1/2 hour,  1 hour
+2. Operational - time? - 1 month - 30 hours only
+3. Technical - otp - sms - cost - 10
+4. Social - 
+
+1. Intranet Mail System - Server - Website - Mail Server - Signup - Login - Inbox-Compose - Draft - Settings - Groups - Attachment - Download - Admin, Users
+
+2. Yatra.com - Hotels - Hotel Signup - Rooms - Amenties -  Admin - Approve - User - Location - Date - List of Hotels - Photos - Sliders - Booking - Hotel - Admin ------
+
+3. Shaadi.com - Groom / Bride - ..........
+
+4. zomato.com - restuarants

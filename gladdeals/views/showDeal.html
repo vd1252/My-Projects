@@ -1,0 +1,85 @@
+<div class="container1">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="">
+        <img ng-src="{{singleDeal[0].deal_image}}" alt="eat" style="width:500px;height:500px;">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>{{singleDeal[0].location}}</span>
+          <h1>{{singleDeal[0].deal_title}}</h1>
+          <p>{{singleDeal[0].details}}</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+          <table class="table">
+            <tr>
+              <th><span><b>Valid For:</b></span></th>
+              <th><span><b>Valid On:</span></b></th>
+              <th><span><b>Timings:</span></b></th>
+            </tr>
+            <tr>
+              <td><div class="cable-choose">
+                <button disabled>{{singleDeal[0].valid_for}}</button>
+              </div>
+            </td>
+              <td>
+                <div class="cable-choose">
+                  <button disabled>{{singleDeal[0].valid_on}}</button>
+                </div>
+              </td>
+              <td>
+                <div class="cable-choose">
+                  <button disabled>{{singleDeal[0].timings}}</button>
+                </div>
+              </td>
+            </tr>
+          </table>
+          
+            
+            
+
+
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>{{singleDeal[0].price|currency:"Rs"}}</span>
+          <button class="cart-btn" ng-click="buy()">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 align-content-center">
+            <button class="btn btn-block btn-danger disabled">Supplier Details</button>
+        
+          <table class="table table-striped" style="margin-top: 20px;">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Address</th>
+            <th>phone</th>
+          </tr>
+          <tr class="bg-success">
+            <td>{{singleDeal[0].dealCompleteData[0].supplier_name}}</td>
+            <td>{{singleDeal[0].dealCompleteData[0].supplier_desc}}</td>
+            <td>{{singleDeal[0].dealCompleteData[0].supplier_address}}</td>
+            <td>{{singleDeal[0].dealCompleteData[0].supplier_phone}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>   
+</div>
+

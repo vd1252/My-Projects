@@ -1,0 +1,28 @@
+SMAP
+loginpage_jsp.java
+JSP
+*S JSP
+*F
++ 0 disp.jsp
+disp.jsp
++ 1 loginpage.jsp
+loginpage.jsp
++ 2 commonheader.jsp
+commonheader.jsp
++ 3 databaseinfo.jsp
+databaseinfo.jsp
+*L
+1,7:59
+1#1:65
+1#2,172:66
+2#1,4:238
+2#3,5:242
+5#1,17:247
+22,38:265
+59,37:303
+96,153:341
+248,39:494
+286,48:533
+335,6:583
+340,104:589
+*E

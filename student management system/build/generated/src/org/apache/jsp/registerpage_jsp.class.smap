@@ -1,0 +1,25 @@
+SMAP
+registerpage_jsp.java
+JSP
+*S JSP
+*F
++ 0 registerpage.jsp
+registerpage.jsp
++ 1 disp.jsp
+disp.jsp
++ 2 commonheader.jsp
+commonheader.jsp
++ 3 databaseinfo.jsp
+databaseinfo.jsp
+*L
+5,43:53
+1#1,7:96
+47#0:102
+1#2,172:103
+48#0,2:275
+2#3,5:278
+49#0,76:283
+124,158:359
+281,87:517
+367,4:603
+*E

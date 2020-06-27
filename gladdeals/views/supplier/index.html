@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Glad-deals</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Meta tags -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="css/style-login.css" rel='stylesheet' type='text/css' media="all">
+    <!--//style sheet end here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+    <script src="http://localhost:3000/javascripts/supplier.js"></script>
+    
+</head>
+
+<body ng-app="supplierApp">
+    <h1 class="error">Login Form</h1>
+    <div class="w3layouts-two-grids">
+        <div class="mid-class">
+            <div class="txt-left-side" ng-controller="loginController">
+                <h2> Login Here </h2>
+                <form method="post" ng-submit="login()">
+                    <div class="form-left-to-w3l">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        <input type="text"  placeholder="Email" required="" ng-model="sup.supplier_email">
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l ">
+
+                        <span class="fa fa-lock" aria-hidden="true"></span>
+                        <input type="password" placeholder="Password" required="" ng-model="sup.supplier_password">
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="btnn">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <div class="txt-left-side" ng-controller="registerController">
+                <h2> Signup Here </h2>
+                <form method="post" ng-submit="register()">
+                    <div class="form-left-to-w3l">
+                        <input type="text" placeholder="Email" ng-model="supplier.supplier_email">
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="form-left-to-w3l ">
+
+                        <input type="password" placeholder="Password" ng-model="supplier.supplier_password">
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="form-left-to-w3l">
+                        <input type="text" placeholder="Supplier Name" ng-model="supplier.supplier_name">
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="form-left-to-w3l">
+                        <input type="text" placeholder="Supplier Description" ng-model="supplier.supplier_desc">
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l">
+                        <input type="text" placeholder="Supplier Address" ng-model="supplier.supplier_address">
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l">
+                        <input type="text" placeholder="Supplier Phone" ng-model="supplier.supplier_phone">
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="btnn">
+                        <button type="submit">Register </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="copyrigh-wthree">
+        <p>
+            © All Rights Reserved
+        </p>
+    </footer>
+</body>
+
+</html>

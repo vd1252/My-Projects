@@ -1,0 +1,21 @@
+<div class="panel-body widget-shadow" style="overflow-x:auto;">
+	<h4>All Users:</h4>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>user_id</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="user in users">
+				<th scope="row">{{user.user_id}}</th>
+				<td>{{user.user_name}}</td>
+				<td>{{user.user_email}}</td>
+				<td>{{user.user_phone}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

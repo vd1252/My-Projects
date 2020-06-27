@@ -1,0 +1,24 @@
+<div class="panel-body widget-shadow" style="overflow-x:auto;">
+	<h4>All Suppliers:</h4>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Supplier_id</th>
+				<th>Supplier_name</th>
+				<th>Supplier_Description</th>
+				<th>Supplier_Address</th>
+				<th>Supplier_Phone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="supplier in suppliers">
+				<th scope="row">{{supplier.supplier_id}}</th>
+				<td>{{supplier.supplier_name}}</td>
+				<td>{{supplier.supplier_desc}}</td>
+				<td>{{supplier.supplier_address}}</td>
+				<td>{{supplier.supplier_phone}}</td>
+				<td><a href="#!editSupplier?id={{supplier._id}}"><span class="fa fa-edit"></span></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

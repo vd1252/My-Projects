@@ -1,0 +1,68 @@
+<div class="forms">
+	<div class="form-grids row widget-shadow" data-example-id="basic-forms">
+		<div class="form-title">
+			<h4>Add Deal :</h4>
+		</div>
+		<div class="form-body">
+			<form method="post">
+
+				<div class="form-group">
+					<label for="selector1">Deal Category</label>
+					
+						<select ng-model="deal.cat_id"  class="form-control1">
+							<option ng-repeat="cat in categories" value="{{cat.cat_id}}">{{cat.cat_name}}</option>
+						</select>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Deal Title</label>
+					<input type="text" ng-model="deal.deal_title" class="form-control" id="exampleInputEmail1"
+						placeholder="Deal Title">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Deal Location</label>
+					<input type="text" ng-model="deal.location" class="form-control" id="exampleInputEmail1"
+						placeholder="Deal Location">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Valid for</label>
+					<input type="text" ng-model="deal.valid_for" class="form-control" id="exampleInputEmail1"
+						placeholder="1+ Person/1 Male">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Valid On</label>
+					<input type="text" ng-model="deal.valid_on" class="form-control" id="exampleInputEmail1"
+						placeholder="Weekdays-Weekends-Specific Days">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Deal Price</label>
+					<input type="text" ng-model="deal.price" class="form-control" id="exampleInputEmail1"
+						placeholder="Deal Price">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Timings</label>
+					<input type="text" ng-model="deal.timings" class="form-control" id="exampleInputEmail1"
+						placeholder="2:00 PM - 5:00 PM">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Deal Details</label>
+					<input type="text" ng-model="deal.details" class="form-control" id="exampleInputEmail1"
+						placeholder="Deal Details">
+				</div>
+				<div class="form-group">
+					<input type="hidden" ng-model="deal.supplier_id" class="form-control" id="exampleInputEmail1"
+					placeholder="Deal Supplier ID">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputFile">Choose Deal Image</label>
+					<input type="file" file-model="deal.file" id="fileDemo" name="f1">
+				</div>
+				<button type="submit" class="btn btn-default" ng-click="Submit()">Add</button>
+			</form>
+		</div>
+	</div>
+</div>

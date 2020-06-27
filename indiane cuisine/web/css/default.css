@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 10, 2019, 4:34:19 PM
+    Author     : HP
+*/
+.brand-menu-sidebar{
+    overflow: hidden;
+}
+.brand-cart-sidebar{
+    overflow: hidden;
+}
+.brand-cart-sidebar-fixed{
+    position: fixed;
+    top: 0;
+    width: 33%;
+ }
+ .brand-menu-sidebar-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+div .myfont{
+    font-family: inherit;
+    color:grey;
+    font-size: 20px;
+    
+}
+.myfont2 {
+    font-family: inherit;
+    color:black;
+    font-size: 20px;
+}
+.sign{
+    height:10px;
+    width:10px;
+    float: left;
+    margin-top:10px;
+}
+.panel p
+{
+    font-size: 1em;
+    color: #A0A0A0;
+     margin: 0em 1em;
+}
+.panel small
+{
+    color: #A0A0A0;
+    margin: 0em 1em;
+}
+.hotel{
+    height:100px;
+    width:100px;
+    float: left;
+    margin-top:10px;
+}
+.myspinner{
+    z-index: 0;
+}
+.carousel-inner .caption { 
+    background-color:lavender ;
+    padding: 10px;
+ }
+ .footer textarea {
+    display: block;
+    width: 100% !important;
+    padding: 0.6em 1em;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    color: #C0F59C;
+    background: #6cbc35;
+    border: none;
+    margin-bottom: 1em;
+}

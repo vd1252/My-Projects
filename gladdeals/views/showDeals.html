@@ -1,0 +1,54 @@
+
+<div class="Services">
+		<div class="container1">
+			<div class="row Services-row">
+				<div class="col-md-12 Services-row-column">
+					
+					<div class="col-sm-3" ng-repeat="deal in deals">
+						<article class="col-item">
+							<div class="photo">
+								<div class="options-cart-round">
+								<a href="#!showDeal?id={{deal.deal_id}}">
+									<button class="btn btn-default" title="Add to cart">
+										<span class="fa fa-arrow-right"></span>
+									</button>
+								</a>
+								</div>
+								<a href="#"> <img ng-src="{{deal.deal_image}}" style="height:300px;" class="img-responsive" alt="Product Image" /> </a>
+							</div>
+							<div class="info">
+								<div class="row" style="height:100px;">
+									<div class="price-details col-md-6" style="height:50px;">
+										<h1>{{deal.deal_title}}</h1>
+										
+									</div>
+								
+									<div class="col-md-6">
+										<span style="color:blue;" class="price-new">{{deal.valid_for}}</span>
+									
+										<span class="price-new">{{deal.price|currency:"Rs"}}</span>
+									
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+					
+					<!--
+					<div class="service-grid1" ng-repeat="deal in deals">
+					<a href="#!singleDeal?id={{deal.cat_id}}">
+						<div class="service-griddy">
+							<div>
+								<img ng-src="{{deal.deal_image}}" class="img-thumbnail" style="width:100px;height:100px;">
+								<h6>{{deal.deal_title}}</h6>
+							</div>
+						</div>
+					</a>	
+					</div>
+				-->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>

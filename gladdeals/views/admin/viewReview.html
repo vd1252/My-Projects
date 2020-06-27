@@ -1,0 +1,21 @@
+<div class="panel-body widget-shadow" style="overflow-x:auto;">
+						<h4>All Reviews:</h4>
+						<table class="table">
+							<thead>
+								<tr>
+								  <th>Review_id</th>
+								  <th>Review_email</th>
+								  <th>Review_data</th>
+								  <th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="review in reviews">
+								  <th scope="row">{{review.review_id}}</th>
+								  <td>{{review.review_email}}</td>
+								  <td>{{review.review_data}}</td>
+								<td><a href="#!deleteReview?id={{review._id}}"><span class="fa fa-trash"></span></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
